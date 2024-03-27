@@ -1,0 +1,45 @@
+/* Search.module.css */
+
+.searchContainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchContainer input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.searchButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchContainer button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.advancedSearchContainer {
+    display: grid;
+    --column: 2;
+    grid-template-columns: repeat(var(--column), 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,28 @@
+.footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-size: 0.8em;
+    background-color: hsla(0, 0%, 96%, 0.261);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px) grayscale(20%);
+
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 5px;
+}
+
+/* @media screen and (max-width: 600px) {
+    footer {
+        margin-bottom: 5rem;
+        margin-left: 0;
+    }
+} */

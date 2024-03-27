@@ -1,0 +1,60 @@
+:root {
+  --url: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+}
+
+main {
+  min-height: 80dvh;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: var(--url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: hsla(184, 88%, 51%, 0.439);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  position: relative;
+  top: 0;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c423ec59;
+  border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+} */
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: black;
+}
+
+hr {
+  border: 0;
+  height: 7px;
+  background-color: black;
+
+}

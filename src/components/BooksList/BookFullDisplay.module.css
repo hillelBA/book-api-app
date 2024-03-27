@@ -1,0 +1,102 @@
+.bookInfoContainer {
+    background-color: hsla(115, 89%, 56%, 0.46);
+    border: 1px solid #ddddddcf;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80vw;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.bookInfoContainer p {
+    background-color: hsla(0, 0%, 100%, 0.835);
+    width: fit-content;
+    border-radius: 0.5rem;
+
+}
+
+.bookInfoContainer h2 {
+    background-color: hsla(0, 0%, 100%, 0.835);
+    width: fit-content;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    margin-right: 140px;
+}
+
+.bookInfoContainer a {
+    background-color: hsla(0, 0%, 100%, 0.835);
+    width: fit-content;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border: 3px solid hsla(0, 0%, 0%, 0.613);
+}
+
+.bookInfoContainer a:hover {
+    background-color: hsla(0, 0%, 100%, 0.835);
+}
+
+.bookTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bookAuthors,
+.bookPublisher,
+.bookPublishedDate,
+.bookDescription,
+.bookPageCount,
+.bookCategories,
+.bookAverageRating,
+.bookRatingsCount,
+.bookLanguage {
+    margin-bottom: 10px;
+}
+
+.bookAuthors,
+.bookPublisher {
+    margin-right: 140px;
+}
+
+
+.bookPreviewLink,
+.bookInfoLink {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bookThumbnail {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border: 2px solid hsla(0, 0%, 0%, 0.613);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .bookInfoContainer {
+        padding: 15px;
+        text-align: center;
+    }
+    .bookInfoContainer .bookThumbnail{
+        position: static;
+        margin-top: 1em;
+    }
+
+    .bookTitle {
+        font-size: 20px;
+    }
+    .bookInfoContainer p{
+        width: 100%;
+        margin-right: 0;
+    }
+    .bookInfoContainer h2 {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,147 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: hsla(0, 0%, 96%, 0.164);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    position: relative;
+    top: 0;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.opennav {
+    display: none;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul:first-child {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    font-size: 2.3em;
+    text-align: center;
+    width: 100px;
+    user-select: none;
+
+}
+
+.navigation ul li:hover a .text,
+.navigation ul li:focus-within a .text {
+    color: #7435f1;
+    display: block;
+    background-color: hsla(195, 53%, 79%, 0.651);
+}
+
+.navigation ul li a .text {
+    display: none;
+    font-size: 0.8em;
+    font-weight: normal;
+    position: absolute;
+    top: 15px;
+}
+
+.navigation ul li a .icon {
+    font-size: 1.2em;
+    transition: 0.5s;
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.navigation ul li:hover a .icon,
+.navigation ul li:focus-within a .icon {
+    transform: translate(0, -100px);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .navigation {
+        padding: 1rem;
+        height: 40px;
+    }
+
+    .navigation ul li a {
+        font-size: 1.5em;
+        width: 80px;
+    }
+
+    .navigation ul li a .icon {
+        font-size: 1em;
+        width: 50px;
+        height: 50px;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .navigation {
+            padding: 1rem;
+        }
+
+        .opennav {
+            display: block;
+            font-size: 2em;
+            cursor: pointer;
+        }
+
+        .navigation ul:not(.open) {
+            display: none;
+        }
+
+        .navigation ul.open {
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            position: relative;
+            top: 100px;
+            left: 0;
+            margin-left: 0;
+            width: 100%;
+            background-color: hsl(0, 0%, 96%);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            z-index: 100;
+            padding: 1rem 2rem;
+        }
+
+        .navigation ul.open li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .navigation ul.open li a .text {
+            display: block;
+            position: relative;
+            top: 0;
+        }
+        .navigation ul.open li a{
+            justify-content: space-around;
+        }
+        .navigation ul.open li a .icon {
+            display: none;
+        }
+
+
+    }
+}
